@@ -38,7 +38,7 @@ namespace MvcMovie
                 }
                 else
                 {
-                    options.UseSqlServer(connectionString);
+                    options.UseSqlServer(Configuration.GetConnectionString("mvc-movie-db"));
                 }
             });
         }
